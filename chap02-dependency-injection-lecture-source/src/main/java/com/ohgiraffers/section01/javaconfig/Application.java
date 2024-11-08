@@ -16,6 +16,7 @@ public class Application {
         // 멤버와 계좌의 연결
         MemberDTO member = context.getBean(MemberDTO.class);
 
+        System.out.println(member);
         System.out.println(member.getPersonalAccount());
         System.out.println(member.getPersonalAccount().deposit(10000));
         System.out.println(member.getPersonalAccount().getBalance());
